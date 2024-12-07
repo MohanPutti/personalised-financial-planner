@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Financial Planner - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Personalized Financial Planner. It allows users to input their basic details, select financial goals, provide financial details, and view a customized financial plan.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Collect basic user details (name, email, mobile, and age).
+- Allow users to select financial goals like retirement, child education, emergencies, and home.
+- Provide detailed financial input (income, expenses, SIP).
+- Display a personalized financial plan with SIP recommendations.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: For building the user interface.
+- **TypeScript**: For type safety and better development experience.
+- **TailwindCSS**: For styling the application.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (v14 or higher)
+- **npm** or **yarn**
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MohanPutti/personalised-financial-planner.git
+   cd personalised-financial-planner
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
+# or
+yarn install
+Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
+# or
+yarn start
+Open the app in your browser at http://localhost:3000.
 
-### `npm run eject`
+It depends on backend repo for calculating sip values - https://github.com/MohanPutti/financial-planner-backend.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Available Scripts
+npm start: Start the development server.
+npm run build: Build the app for production.
+npm test: Run tests (if applicable).
+npm run lint: Lint the codebase.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Project Structure
+bash
+Copy code
+src/
+├── components/         # Reusable React components
+│   ├── BasicDetails.tsx
+│   ├── FinancialDetails.tsx
+│   ├── GoalsSelection.tsx
+│   └── SummaryPage.tsx
+├── services/           # API service layer
+│   └── apiService.ts
+├── App.tsx             # Main application file
+├── index.tsx           # Entry point for React
+└── styles/             # Global styles
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
